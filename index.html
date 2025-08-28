@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lang.io - Practice language easier</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="brand-lang">lang</span><span class="brand-io">.io</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-5">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#use-cases">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#core-features">Feature</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#popular-courses">All Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#community">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="navbar-nav ms-auto d-flex align-items-center">
+                    <button class="btn btn-primary join-waitlist-btn" data-bs-toggle="modal" data-bs-target="#registrationModal">Register Now</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 col-md-12 mb-5 mb-lg-0">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            Unlock the World with<span class="brand-highlight"> Languages</span>
+                        </h1>
+                        <p class="hero-description">
+                            Learn new languages with ease and confidence through our expert-designed courses.                        </p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary btn-lg me-3">
+                                Register Now
+                                <i class="fas fa-arrow-right ms-2"></i>
+                            </button>
+                            <button class="btn btn-outline-primary btn-lg">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-md-12">
+                    <div class="mobile-mockup-container">
+                        <div class="mobile-mockup">
+                            <div class="notch-flag"></div>
+                            <div class="mockup-screen">
+                                <div class="mockup-header">
+                                    <div class="mockup-status-bar">
+                                        <span class="time">9:41</span>
+                                        <div class="status-icons">
+                                            <i class="fas fa-wifi"></i>
+                                            <i class="fas fa-battery-three-quarters"></i>
+                                        </div>
+                                    </div>
+                                    <div class="mockup-nav">
+                                        <button class="back-btn">
+                                            <i class="fas fa-arrow-left"></i>
+                                        </button>
+                                        <span class="skip-text">Skip</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="mockup-content">
+                                    <h3 class="welcome-text">Welcome to lang.io</h3>
+                                    <p class="instruction-text">Let's select the language that you want to learn!</p>
+                                    
+                                    <div class="language-list">
+                                        <div class="language-item selected">
+                                            <span class="language-name">English</span>
+                                            <div class="radio-btn selected"></div>
+                                        </div>
+                                        <div class="language-item">
+                                            <span class="language-name">Spain</span>
+                                            <div class="radio-btn"></div>
+                                        </div>
+                                        <div class="language-item">
+                                            <span class="language-name">Germany</span>
+                                            <div class="radio-btn"></div>
+                                        </div>
+                                        <div class="language-item">
+                                            <span class="language-name">Bahasa Indonesia</span>
+                                            <div class="radio-btn"></div>
+                                        </div>
+                                        <div class="language-item">
+                                            <div class="radio-btn"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <button class="btn btn-primary continue-btn">Continue</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Floating Decorative Flags -->
+                        <div class="floating-flag flag-indonesia"></div>
+                        <div class="floating-flag flag-usa"></div>
+                        <div class="floating-flag flag-spain"></div>
+                        <div class="floating-flag flag-germany"></div>
+                        <div class="floating-flag flag-japan"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Section Heading Only -->
+    <section id="core-features" class="py-5 mt-4 mb-2">
+        <div class="container text-center">
+            <span class="section-badge">Core Features</span>
+            <h2 class="section-title display-5 mt-3">Here are <span class="highlight">the reasons</span> you should try</h2>
+        </div>
+    </section>
+    
+    <!-- Three Feature Boxes -->
+    <section class="py-2 pb-5">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4 features-grid">
+                <div class="col">
+                    <div class="feature-soft h-100">
+                        <div class="feature-illustration">
+                            <img src="1.png" alt="Personalized Learning">
+                        </div>
+                        <h5 class="feature-title-blue mb-2 text-center">Personalized Learning Paths</h5>
+                        <p class="feature-desc mb-0 text-center">Our app tailors lessons to your skill level and learning pace. With adaptive technology, you'll always get the right challenge to keep you motivated and progressing.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="feature-soft h-100">
+                        <div class="feature-illustration">
+                            <img src="2.png" alt="Grammar Checking UI">
+                        </div>
+                        <h5 class="feature-title-blue mb-2 text-center">Grammar & practice checking</h5>
+                        <p class="feature-desc mb-0 text-center">Practice speaking with confidence using our interactive conversation feature. Learn practical phrases and get instant feedback to sound like a native speaker.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="feature-soft h-100">
+                        <div class="feature-illustration">
+                            <img src="3.png" alt="Mobile Learning">
+                        </div>
+                        <h5 class="feature-title-blue mb-2 text-center">Learn Anytime, Anywhere</h5>
+                        <p class="feature-desc mb-0 text-center">Access bite-sized lessons on your phone, tablet, or computer. Whether you have 5 minutes or an hour, lang.io fits into your busy schedule.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Chinese Course Details Section (added below the three boxes) -->
+     <section class="py-5">
+        <div class="container text-center">
+            <h2 class="section-title display-5 mt-3">Chinese Language <span class="highlight"> Course </span>  Details</h2>
+        </div>
+    </section>
+     <section class="py-5">
+        <div class="container">
+            <div class="row g-3">
+                <div class="container-fluid info-bar text-white fw-semibold px-4 py-3 rounded-3 mb-5">
+                    <div class="row">
+                      <div class="col-md-4">
+                        Duration: 3 Months – 18 Months
+                      </div>
+                      <div class="col-md-4">
+                        Timing: 9:30 AM – 9:30 PM
+                      </div>
+                      <div class="col-md-4">
+                        Batch Size: 10–15 Students
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="row gx-5">
+                <div class="col-lg-8">
+                    <h2 class="h3 fw-bold mb-3">Why Learn Chinese?</h2>
+                    <ul class="list-unstyled mb-4">
+                      <li class="d-flex align-items-start mb-3">
+                        <i class="fa-solid fa-check text-primary me-2 mt-1"></i>
+                        <span>Chinese is spoken by nearly one-fifth of the world’s population, making it one of the most widely used and important languages across the globe.</span>
+                      </li>
+                      <li class="d-flex align-items-start mb-3">
+                        <i class="fa-solid fa-check text-primary me-2 mt-1"></i>
+                        <span>It is the official language of China and Taiwan, and is also spoken in large communities across countries such as Singapore, Malaysia, Indonesia, and Thailand.</span>
+                      </li>
+                      <li class="d-flex align-items-start mb-3">
+                        <i class="fa-solid fa-check text-primary me-2 mt-1"></i>
+                        <span>Research shows that learning Chinese stimulates both the left and right sides of the brain, improving creativity, logic, memory, and problem-solving skills.</span>
+                      </li>
+                      <li class="d-flex align-items-start mb-3">
+                        <i class="fa-solid fa-check text-primary me-2 mt-1"></i>
+                        <span>China is the world’s second largest economy and an essential global trading partner, creating strong demand for professionals with Chinese language expertise.</span>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  
+
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <h3 class="h4 fw-bold mb-3">Class Details</h3>
+                    <ul class="list-group list-group-flush mb-5 gap-3">
+                        <li class="list-group-item"><i class="fa-solid fa-video me-2 text-primary"></i>Modes: <strong>Online, Regular</strong></li>
+                        <li class="list-group-item"><i class="fa-solid fa-users me-2 text-primary"></i>Students: <strong>Max 15 Per Class</strong></li>
+                        <li class="list-group-item"><i class="fa-solid fa-chalkboard-user me-2 text-primary"></i>Course Teachers: <strong>01</strong></li>
+                        <li class="list-group-item"><i class="fa-solid fa-signal me-2 text-primary"></i>Skill Level: <strong>Advanced</strong></li>
+                        <li class="list-group-item"><i class="fa-solid fa-language me-2 text-primary"></i>Language: <strong>Chinese</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Courses Section -->
+    <section id="popular-courses" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-badge">Popular Courses</span>
+                <h2 class="section-title display-5 mt-3">Pick A Course To <span class="highlight">Get Started</span></h2>
+            </div>
+            
+            <div class="container py-5">
+                <div class="row g-4">
+                  
+                  <!-- English -->
+                  <div class="col-md-6 col-lg-3">
+                    <div class="course-card">
+                      <img src="course_thumbnail_english.png" alt="English">
+                      <h4 class="course-title">Learn English</h4>
+                      <p>Learn English effectively with structured lessons focusing on grammar, vocabulary, and real-life communication.</p>
+                      <div>
+                        <span class="badge-custom badge-weeks">12 WEEKS</span>
+                      </div>
+                      <button class="btn-custom">Start Learning</button>
+                    </div>
+                  </div>
+              
+                  <!-- French -->
+                  <div class="col-md-6 col-lg-3">
+                    <div class="course-card">
+                      <img src="course_thumbnail_french.png" alt="French">
+                      <h4 class="course-title">Learn French</h4>
+                      <p>Learn French easily with engaging lessons covering grammar, vocabulary, and everyday conversation skills.</p>
+                      <div>
+                        <span class="badge-custom badge-weeks">10 WEEKS</span>
+                      </div>
+                      <button class="btn-custom">Start Learning</button>
+                    </div>
+                  </div>
+              
+                  <!-- German -->
+                  <div class="col-md-6 col-lg-3">
+                    <div class="course-card">
+                      <img src="course_thumbnail_german.png" alt="German">
+                      <h4 class="course-title">Learn German</h4>
+                      <p>Learn German confidently with step-by-step lessons on grammar, vocabulary, and practical communication.</p>
+                      <div>
+                        <span class="badge-custom badge-weeks">14 WEEKS</span>
+                      </div>
+                      <button class="btn-custom">Start Learning</button>
+                    </div>
+                  </div>
+              
+                  <!-- Chinese -->
+                  <div class="col-md-6 col-lg-3">
+                    <div class="course-card">
+                      <img src="china.png" alt="Chinese">
+                      <h4 class="course-title">Learn Chinese</h4>
+                      <p>Learn Chinese smoothly with guided lessons in grammar, vocabulary, and real-world conversation practice.</p>
+                      <div>
+                        <span class="badge-custom badge-weeks">11 WEEKS</span>
+                      </div>
+                      <button class="btn-custom">Start Learning</button>
+                    </div>
+                  </div>
+              
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Experienced Tutors -->
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="stats-card text-center">
+              <div class="stats-icon mb-3">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M30 5C16.2 5 5 16.2 5 30s11.2 25 25 25 25-11.2 25-25S43.8 5 30 5z" stroke="#1e40af" stroke-width="2" fill="none"/>
+                  <path d="M20 25c0-5.5 4.5-10 10-10s10 4.5 10 10" stroke="#1e40af" stroke-width="2" fill="none"/>
+                  <path d="M15 40c0-8.3 6.7-15 15-15s15 6.7 15 15" stroke="#1e40af" stroke-width="2" fill="none"/>
+                  <circle cx="25" cy="20" r="2" fill="#1e40af"/>
+                  <circle cx="35" cy="20" r="2" fill="#1e40af"/>
+                  <circle cx="30" cy="35" r="2" fill="#1e40af"/>
+                  <circle cx="20" cy="30" r="2" fill="#1e40af"/>
+                  <circle cx="40" cy="30" r="2" fill="#1e40af"/>
+                </svg>
+              </div>
+              <div class="stats-number mb-2">38,000+</div>
+              <div class="stats-description">Experienced Tutors</div>
+            </div>
+          </div>
+          
+          <!-- 5-Star Reviews -->
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="stats-card text-center">
+              <div class="stats-icon mb-3">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M30 5C16.2 5 5 16.2 5 30s11.2 25 25 25 25-11.2 25-25S43.8 5 30 5z" stroke="#1e40af" stroke-width="2" fill="none"/>
+                  <path d="M20 25c0-5.5 4.5-10 10-10s10 4.5 10 10" stroke="#1e40af" stroke-width="2" fill="none"/>
+                  <path d="M15 40c0-8.3 6.7-15 15-15s15 6.7 15 15" stroke="#1e40af" stroke-width="2" fill="none"/>
+                  <circle cx="25" cy="20" r="2" fill="#1e40af"/>
+                  <circle cx="35" cy="20" r="2" fill="#1e40af"/>
+                  <circle cx="30" cy="35" r="2" fill="#1e40af"/>
+                  <circle cx="20" cy="30" r="2" fill="#1e40af"/>
+                  <circle cx="40" cy="30" r="2" fill="#1e40af"/>
+                </svg>
+              </div>
+              <div class="stats-number mb-2">30,000+</div>
+              <div class="stats-description">5-Star Tutor Reviews</div>
+            </div>
+          </div>
+          
+          <!-- Subjects Taught -->
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="stats-card text-center">
+              <div class="stats-icon mb-3">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M30 5C16.2 5 5 16.2 5 30s11.2 25 25 25 25-11.2 25-25S43.8 5 30 5z" stroke="#1e40af" stroke-width="2" fill="none"/>
+                  <path d="M20 25c0-5.5 4.5-10 10-10s10 4.5 10 10" stroke="#1e40af" stroke-width="2" fill="none"/>
+                  <path d="M15 40c0-8.3 6.7-15 15-15s15 6.7 15 15" stroke="#1e40af" stroke-width="2" fill="none"/>
+                  <circle cx="25" cy="20" r="2" fill="#1e40af"/>
+                  <circle cx="35" cy="20" r="2" fill="#1e40af"/>
+                  <circle cx="30" cy="35" r="2" fill="#1e40af"/>
+                  <circle cx="20" cy="30" r="2" fill="#1e40af"/>
+                  <circle cx="40" cy="30" r="2" fill="#1e40af"/>
+                </svg>
+              </div>
+              <div class="stats-number mb-2">180+</div>
+              <div class="stats-description">Subjects Taught</div>
+            </div>
+          </div>
+          
+          <!-- Online Videos -->
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="stats-card text-center">
+              <div class="stats-icon mb-3">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M30 5C16.2 5 5 16.2 5 30s11.2 25 25 25 25-11.2 25-25S43.8 5 30 5z" stroke="#1e40af" stroke-width="2" fill="none"/>
+                  <path d="M20 25c0-5.5 4.5-10 10-10s10 4.5 10 10" stroke="#1e40af" stroke-width="2" fill="none"/>
+                  <path d="M15 40c0-8.3 6.7-15 15-15s15 6.7 15 15" stroke="#1e40af" stroke-width="2" fill="none"/>
+                  <circle cx="25" cy="20" r="2" fill="#1e40af"/>
+                  <circle cx="35" cy="20" r="2" fill="#1e40af"/>
+                  <circle cx="30" cy="35" r="2" fill="#1e40af"/>
+                  <circle cx="20" cy="30" r="2" fill="#1e40af"/>
+                  <circle cx="40" cy="30" r="2" fill="#1e40af"/>
+                </svg>
+              </div>
+              <div class="stats-number mb-2">160+</div>
+              <div class="stats-description">Online Videos</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+          <!-- Community Section with Blue Gradient -->
+    <section id="community" class="community-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 col-md-12 mb-5 mb-lg-0">
+                    <div class="community-content">
+                        <span class="community-badge">Community</span>
+                        <h2 class="community-title">Join a Global Community</h2>
+                        <p class="community-description">
+                            Connect with millions of learners worldwide! Practice with native speakers, join language challenges, and make new friends in our vibrant community. Together, we make learning a language an unforgettable journey.
+                        </p>
+                        <button class="btn btn-dark btn-lg app-store-btn">
+                            <i class="fab fa-apple me-2"></i>
+                            Download on the App Store
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-md-12">
+                    <div class="phone-mockups-container">
+                        <!-- Back Phone Mockup (Streaks & Leaderboard) -->
+                        <div class="phone-mockup back-phone">
+                            <div class="mockup-screen streaks-screen">
+                                <div class="mockup-header">
+                                    <div class="mockup-status-bar">
+                                        <span class="time">9:41</span>
+                                        <div class="status-icons">
+                                            <i class="fas fa-wifi"></i>
+                                            <i class="fas fa-battery-three-quarters"></i>
+                                        </div>
+                                    </div>
+                                    <div class="mockup-nav">
+                                        <i class="fas fa-arrow-left"></i>
+                                        <span class="monthly-streaks-title">Monthly Streaks</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="mockup-content">
+                                    <div class="streaks-section">
+                                        <div class="streak-info">
+                                            <i class="fas fa-fire streak-icon"></i>
+                                            <span class="streak-text">30 days streak</span>
+                                        </div>
+                                        <div class="streak-circles">
+                                            <div class="streak-circle checked">12</div>
+                                            <div class="streak-circle checked">11</div>
+                                            <div class="streak-circle checked">10</div>
+                                            <div class="streak-circle checked">9</div>
+                                            <div class="streak-circle checked">8</div>
+                                            <div class="streak-circle checked">7</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="leaderboard-section">
+                                        <h4 class="leaderboard-title">Leader Board</h4>
+                                        <div class="leaderboard-item">
+                                            <div class="rank">1</div>
+                                            <div class="avatar">S</div>
+                                            <span class="name">Abram Curtis</span>
+                                        </div>
+                                        <div class="leaderboard-item">
+                                            <div class="rank">2</div>
+                                            <div class="avatar">A</div>
+                                            <span class="name">Chance Lipshutz</span>
+                                        </div>
+                                        <div class="leaderboard-item">
+                                            <div class="rank">3</div>
+                                            <div class="avatar">A</div>
+                                            <span class="name">Emery Septimus</span>
+                                        </div>
+                                        <div class="leaderboard-item">
+                                            <div class="rank">4</div>
+                                            <div class="avatar">A</div>
+                                            <span class="name">Chance Calzoni</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Front Phone Mockup (Language Selection) -->
+                        <div class="phone-mockup front-phone">
+                            <div class="mockup-screen language-screen">
+                                <div class="mockup-header">
+                                    <div class="mockup-status-bar">
+                                        <span class="time">9:41</span>
+                                        <div class="status-icons">
+                                            <i class="fas fa-wifi"></i>
+                                            <i class="fas fa-battery-three-quarters"></i>
+                                        </div>
+                                    </div>
+                                    <div class="mockup-nav">
+                                        <i class="fas fa-arrow-left"></i>
+                                        <span class="skip-text">Skip</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="mockup-content">
+                                    <h3 class="welcome-text">Welcome to lang.io</h3>
+                                    <p class="instruction-text">Let's select the language that you want to learn!</p>
+                                    
+                                    <div class="language-list">
+                                        <div class="language-item selected">
+                                            <div class="flag-icon usa-flag"></div>
+                                            <span class="language-name">English</span>
+                                            <div class="radio-btn selected"></div>
+                                        </div>
+                                        <div class="language-item">
+                                            <div class="flag-icon spain-flag"></div>
+                                            <span class="language-name">Spain</span>
+                                            <div class="radio-btn"></div>
+                                        </div>
+                                        <div class="language-item">
+                                            <div class="flag-icon germany-flag"></div>
+                                            <span class="language-name">Germany</span>
+                                            <div class="radio-btn"></div>
+                                        </div>
+                                        <div class="language-item">
+                                            <div class="flag-icon indonesia-flag"></div>
+                                            <span class="language-name">Bahasa Indonesia</span>
+                                            <div class="radio-btn"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Floating App Icon -->
+                        <div class="floating-app-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer Section -->
+     <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-5 mb-lg-0">
+                    <div class="footer-content">
+                        <h3 class="footer-title">Ready to start your language journey?</h3>
+                        <p class="footer-description">
+                            Download Lang today and join millions of learners worldwide!
+                        </p>
+                        <button class="btn btn-dark btn-lg app-store-btn">
+                            <i class="fab fa-apple me-2"></i>
+                            Download on the App Store
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="col-lg-8 col-md-12">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <h5 class="footer-column-title">Learn More</h5>
+                            <ul class="footer-links">
+                                <li><a href="#use-cases">Use cases</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#features">Features</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <h5 class="footer-column-title">Support</h5>
+                            <ul class="footer-links">
+                                <li><a href="#help">Help Center</a></li>
+                                <li><a href="#faqs">FAQs</a></li>
+                                <li><a href="#contact">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <h5 class="footer-column-title">Legal</h5>
+                            <ul class="footer-links">
+                                <li><a href="#privacy">Privacy Policy</a></li>
+                                <li><a href="#terms">Terms of Service</a></li>
+                                <li><a href="#cookies">Cookie Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Registration Modal -->
+    <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header bg-primary text-white border-0 rounded-top">
+                    <h5 class="modal-title fw-bold" id="registrationModalLabel">
+                        <span class="text-white">Student</span> Registration
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form id="studentRegistrationForm">
+                        <!-- Personal Information -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <h6 class="text-primary fw-semibold border-bottom border-2 border-primary pb-2 mb-3">Personal Information</h6>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName" class="form-label fw-medium text-dark">First Name *</label>
+                                <input type="text" class="form-control form-control-lg border-2" id="firstName" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName" class="form-label fw-medium text-dark">Last Name *</label>
+                                <input type="text" class="form-control form-control-lg border-2" id="lastName" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label fw-medium text-dark">Email Address *</label>
+                                <input type="email" class="form-control form-control-lg border-2" id="email" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label fw-medium text-dark">Phone Number</label>
+                                <input type="tel" class="form-control form-control-lg border-2" id="phone">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="dateOfBirth" class="form-label fw-medium text-dark">Date of Birth *</label>
+                                <input type="date" class="form-control form-control-lg border-2" id="dateOfBirth" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="gender" class="form-label fw-medium text-dark">Gender</label>
+                                <select class="form-select form-select-lg border-2" id="gender">
+                                    <option value="">Select Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                    <option value="prefer-not-to-say">Prefer not to say</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Academic Information -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <h6 class="text-primary fw-semibold border-bottom border-2 border-primary pb-2 mb-3">Academic Information</h6>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="currentLevel" class="form-label fw-medium text-dark">Current Education Level *</label>
+                                <select class="form-select form-select-lg border-2" id="currentLevel" required>
+                                    <option value="">Select Education Level</option>
+                                    <option value="high-school">High School</option>
+                                    <option value="undergraduate">Undergraduate</option>
+                                    <option value="graduate">Graduate</option>
+                                    <option value="working-professional">Working Professional</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="institution" class="form-label fw-medium text-dark">Institution/School</label>
+                                <input type="text" class="form-control form-control-lg border-2" id="institution" placeholder="Your school or university name">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="fieldOfStudy" class="form-label fw-medium text-dark">Field of Study</label>
+                                <input type="text" class="form-control form-control-lg border-2" id="fieldOfStudy" placeholder="e.g., Computer Science, Business">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="graduationYear" class="form-label fw-medium text-dark">Expected Graduation Year</label>
+                                <input type="number" class="form-control form-control-lg border-2" id="graduationYear" min="2024" max="2030" placeholder="2024">
+                            </div>
+                        </div>
+
+                        <!-- Language Learning Preferences -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <h6 class="text-primary fw-semibold border-bottom border-2 border-primary pb-2 mb-3">Language Learning Preferences</h6>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="nativeLanguage" class="form-label fw-medium text-dark">Native Language *</label>
+                                <select class="form-select form-select-lg border-2" id="nativeLanguage" required>
+                                    <option value="">Select Native Language</option>
+                                    <option value="english">English</option>
+                                    <option value="spanish">Spanish</option>
+                                    <option value="french">French</option>
+                                    <option value="german">German</option>
+                                    <option value="chinese">Chinese</option>
+                                    <option value="japanese">Japanese</option>
+                                    <option value="korean">Korean</option>
+                                    <option value="arabic">Arabic</option>
+                                    <option value="hindi">Hindi</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="targetLanguage" class="form-label fw-medium text-dark">Language to Learn *</label>
+                                <select class="form-select form-select-lg border-2" id="targetLanguage" required>
+                                    <option value="">Select Target Language</option>
+                                    <option value="english">English</option>
+                                    <option value="spanish">Spanish</option>
+                                    <option value="french">French</option>
+                                    <option value="german">German</option>
+                                    <option value="chinese">Chinese</option>
+                                    <option value="japanese">Japanese</option>
+                                    <option value="korean">Korean</option>
+                                    <option value="arabic">Arabic</option>
+                                    <option value="hindi">Hindi</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="proficiencyLevel" class="form-label fw-medium text-dark">Current Proficiency Level</label>
+                                <select class="form-select form-select-lg border-2" id="proficiencyLevel">
+                                    <option value="">Select Level</option>
+                                    <option value="beginner">Beginner (A1)</option>
+                                    <option value="elementary">Elementary (A2)</option>
+                                    <option value="intermediate">Intermediate (B1)</option>
+                                    <option value="upper-intermediate">Upper Intermediate (B2)</option>
+                                    <option value="advanced">Advanced (C1)</option>
+                                    <option value="proficient">Proficient (C2)</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="learningGoal" class="form-label fw-medium text-dark">Learning Goal</label>
+                                <select class="form-select form-select-lg border-2" id="learningGoal">
+                                    <option value="">Select Goal</option>
+                                    <option value="academic">Academic Studies</option>
+                                    <option value="career">Career Advancement</option>
+                                    <option value="travel">Travel & Tourism</option>
+                                    <option value="personal">Personal Interest</option>
+                                    <option value="immigration">Immigration</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Account Security -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <h6 class="text-primary fw-semibold border-bottom border-2 border-primary pb-2 mb-3">Account Security</h6>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="password" class="form-label fw-medium text-dark">Password *</label>
+                                <input type="password" class="form-control form-control-lg border-2" id="password" required minlength="8">
+                                <div class="form-text text-muted">Minimum 8 characters</div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="confirmPassword" class="form-label fw-medium text-dark">Confirm Password *</label>
+                                <input type="password" class="form-control form-control-lg border-2" id="confirmPassword" required>
+                            </div>
+                        </div>
+
+                        <!-- Terms and Preferences -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input border-2" type="checkbox" id="termsAccepted" required>
+                                    <label class="form-check-label text-dark" for="termsAccepted">
+                                        I agree to the <a href="#" class="text-primary text-decoration-none fw-medium">Terms of Service</a> and <a href="#" class="text-primary text-decoration-none fw-medium">Privacy Policy</a> *
+                                    </label>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input border-2" type="checkbox" id="marketingEmails">
+                                    <label class="form-check-label text-dark" for="marketingEmails">
+                                        I would like to receive updates about new courses and learning tips
+                                    </label>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-top border-2 p-4">
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" form="studentRegistrationForm" class="btn btn-primary btn-lg px-4 fw-semibold">Create Account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
